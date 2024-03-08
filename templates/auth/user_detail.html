@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        
+        <h1 style="padding-bottom: 20px">{{ user.username }}</h1>
+
+        {% if user.avatar %}
+        <div style="width: 100%">
+            <ul style="padding: 20px; display: flex">
+                <li style="padding: 30px"><img src="{{ user.avatar.url }}" alt="" style="width: 300px; height: 300px"></li>
+            </ul>
+        </div>
+        {% else %}
+        {% endif %}
+    </main>
+</body>
+</html>
