@@ -25,8 +25,10 @@ def cake_add(request, pk):
 
     if not baskets.exists():
         BaasketCake.objects.create(cake=cake, quantity=1)
-        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
-        
+    
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
     
     
     
